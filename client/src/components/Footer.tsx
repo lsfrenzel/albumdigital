@@ -1,5 +1,6 @@
 import { Heart } from "lucide-react";
 import { SiWhatsapp } from "react-icons/si";
+import logoGohan from "@assets/logo_gohan_1760109187756.png";
 
 export default function Footer() {
   const whatsappUrl = "https://wa.me/5511943652488?text=Olá!%20Quero%20comprar%20um%20álbum%20digital.";
@@ -9,9 +10,12 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-12 mb-8">
           <div>
-            <h3 className="font-serif text-2xl font-bold mb-4 text-primary">
-              Gohan Digital
-            </h3>
+            <div className="flex items-center gap-3 mb-4">
+              <img src={logoGohan} alt="Gohan Digital Logo" className="w-12 h-12 rounded-full" />
+              <h3 className="font-serif text-2xl font-bold text-primary">
+                Gohan Digital
+              </h3>
+            </div>
             <p className="text-background/80 leading-relaxed">
               Transformando momentos especiais em memórias digitais eternas. 
               Preservamos suas histórias com carinho e qualidade.

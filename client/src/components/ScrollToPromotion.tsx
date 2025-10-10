@@ -37,7 +37,7 @@ export default function ScrollToPromotion() {
     <Button
       onClick={scrollToPromotion}
       size="icon"
-      className="fixed bottom-24 right-6 z-40 w-14 h-14 rounded-full shadow-2xl bg-primary hover:bg-primary/90 animate-in slide-in-from-bottom-8 hover:scale-110 transition-all duration-300"
+      className="fixed bottom-24 left-6 z-40 w-14 h-14 rounded-full shadow-2xl bg-primary hover:bg-primary/90 animate-in slide-in-from-bottom-8 hover:scale-110 transition-all duration-300"
       data-testid="button-scroll-to-promotion"
     >
       <ArrowUp className="w-6 h-6" />
