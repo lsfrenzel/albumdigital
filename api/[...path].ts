@@ -51,7 +51,7 @@ app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
   res.status(status).json({ message });
 });
 
-// Vercel serverless handler
+// Vercel serverless handler - catch all API routes
 export default async function handler(req: any, res: any) {
   await initializeApp();
   return app(req, res);
