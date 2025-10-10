@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Hero from "@/components/Hero";
 import ProductCard from "@/components/ProductCard";
 import Promotion from "@/components/Promotion";
@@ -10,6 +11,27 @@ import petImage from "@assets/stock_images/cute_golden_retrieve_da1040a6.jpg";
 import coupleImage from "@assets/stock_images/romantic_couple_hold_ffaf3a67.jpg";
 
 export default function Home() {
+  useEffect(() => {
+    const initAOS = () => {
+      if (typeof window !== 'undefined' && (window as any).AOS) {
+        (window as any).AOS.init({
+          duration: 800,
+          easing: 'ease-in-out',
+          once: true,
+          offset: 100,
+          disable: false
+        });
+      }
+    };
+
+    if (document.readyState === 'complete') {
+      initAOS();
+    } else {
+      window.addEventListener('load', initAOS);
+      return () => window.removeEventListener('load', initAOS);
+    }
+  }, []);
+
   return (
     <div className="min-h-screen">
       <Hero />
