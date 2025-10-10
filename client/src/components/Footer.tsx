@@ -1,8 +1,8 @@
 import { Heart } from "lucide-react";
-import { SiWhatsapp, SiInstagram, SiFacebook } from "react-icons/si";
+import { SiWhatsapp } from "react-icons/si";
 
 export default function Footer() {
-  const whatsappUrl = "https://wa.me/5511943652488";
+  const whatsappUrl = "https://wa.me/5511943652488?text=Olá!%20Quero%20comprar%20um%20álbum%20digital.";
 
   return (
     <footer className="bg-gradient-to-br from-foreground to-foreground/95 text-background py-12">
@@ -40,7 +40,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold text-lg mb-4">Contato & Redes Sociais</h4>
+            <h4 className="font-semibold text-lg mb-4">Contato</h4>
             <div className="flex gap-4 mb-4">
               <a
                 href={whatsappUrl}
@@ -50,20 +50,6 @@ export default function Footer() {
                 data-testid="link-whatsapp-footer"
               >
                 <SiWhatsapp className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 bg-background/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors hover-elevate"
-                data-testid="link-instagram-footer"
-              >
-                <SiInstagram className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 bg-background/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors hover-elevate"
-                data-testid="link-facebook-footer"
-              >
-                <SiFacebook className="w-5 h-5" />
               </a>
             </div>
             <p className="text-background/80 text-sm">

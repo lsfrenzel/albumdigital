@@ -17,7 +17,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
       
       <div className="relative z-10 max-w-6xl mx-auto px-4 py-20 text-center text-white" data-aos="fade-up">
-        <h1 className="font-serif text-5xl md:text-7xl font-bold mb-6 leading-tight">
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight" style={{ fontFamily: 'Cinzel, serif' }}>
           Transforme momentos em<br />
           <span className="text-primary">memórias digitais</span>
         </h1>

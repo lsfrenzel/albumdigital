@@ -49,7 +49,7 @@ export default function Home() {
 
           <div className="space-y-12">
             <ProductCard
-              title="Gohan Golden"
+              title="Eternize seu Pet"
               description="Álbum digital para registrar momentos de pets, com design fofo, elegante e interativo."
               price="R$ 150,00"
               siteUrl="https://gohanogolden-production.up.railway.app/"
@@ -57,7 +57,7 @@ export default function Home() {
             />
             
             <ProductCard
-              title="Gohan para Casais"
+              title="Seu Amor é Único"
               description="Álbum digital para casais registrarem memórias juntos, com um toque romântico e delicado."
               price="R$ 150,00"
               siteUrl="https://lsfrenzel.github.io/gohan/"

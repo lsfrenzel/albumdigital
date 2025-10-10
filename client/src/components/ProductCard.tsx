@@ -54,7 +54,7 @@ export default function ProductCard({
             onClick={() => window.open(siteUrl, '_blank')}
             data-testid={`button-ver-album-${title.toLowerCase().replace(/\s+/g, '-')}`}
           >
-            Ver Álbum <ExternalLink className="w-4 h-4" />
+            Veja Exemplo <ExternalLink className="w-4 h-4" />
           </Button>
           <Button
             onClick={() => window.open(whatsappUrl, '_blank')}

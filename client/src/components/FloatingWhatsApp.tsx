@@ -1,10 +1,11 @@
 import { useState } from "react";
-import { MessageCircle, X } from "lucide-react";
+import { X } from "lucide-react";
+import { SiWhatsapp } from "react-icons/si";
 import { Button } from "@/components/ui/button";
 
 export default function FloatingWhatsApp() {
   const [isExpanded, setIsExpanded] = useState(false);
-  const whatsappUrl = "https://wa.me/5511943652488?text=Olá!%20Gostaria%20de%20fazer%20uma%20cotação%20para%20um%20álbum%20digital!";
+  const whatsappUrl = "https://wa.me/5511943652488?text=Olá!%20Quero%20comprar%20um%20álbum%20digital.";
 
   return (
     <div className="fixed bottom-6 right-6 z-50">
@@ -39,7 +40,7 @@ export default function FloatingWhatsApp() {
           className="w-16 h-16 bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110 animate-pulse"
           data-testid="button-floating-whatsapp"
         >
-          <MessageCircle className="w-8 h-8" />
+          <SiWhatsapp className="w-8 h-8" />
         </button>
 
         <div className="absolute -bottom-1 -right-1 w-20 text-center">
