@@ -1,0 +1,116 @@
+crie um site moderno e animado para vender dois produtos digitais:
+
+Tema do site:
+
+Venda de álbuns digitais personalizados desenvolvidos em HTML, CSS e JavaScript, hospedados no Railway e GitHub Pages.
+
+Produtos:
+
+Gohan Golden
+
+Site: https://gohanogolden-production.up.railway.app/
+
+Descrição: Álbum digital para registrar momentos de pets, com design fofo, elegante e interativo.
+
+Gohan para Casais
+
+Site: https://lsfrenzel.github.io/gohan/
+
+Descrição: Álbum digital para casais registrarem memórias juntos, com um toque romântico e delicado.
+
+Preço:
+
+Cada álbum digital individual: R$ 150,00
+
+Promoção especial: Os dois juntos por R$ 199,90
+
+Funcionalidades obrigatórias:
+
+Botão flutuante do WhatsApp fixo no canto inferior direito para contato direto (ex: “Quero comprar!”).
+
+Botões “Comprar agora” que direcionam ao WhatsApp com mensagem pré-preenchida.
+
+Design premium e responsivo (funcione bem em celular e desktop).
+
+Animações suaves usando CSS e/ou JavaScript (ex: fade-in, hover effects, scroll reveal).
+
+Destaque visual para o preço promocional (ex: selo de promoção, cor vibrante).
+
+Cabeçalho e rodapé com efeito de transição ao rolar a página.
+
+Depoimentos fictícios de clientes satisfeitos.
+
+Sessão “Como funciona” mostrando os passos:
+
+Escolha seu álbum.
+
+Envie suas fotos e informações.
+
+Receba seu site personalizado pronto.
+
+Compartilhe com amigos e familiares.
+
+Estrutura sugerida:
+
+Seção principal (Hero):
+
+Título: “Transforme momentos em memórias digitais”
+
+Subtítulo: “Crie seu álbum digital exclusivo — para pets ou casais.”
+
+Botão “Aproveite a promoção: 2 por R$199,90”.
+
+Seção de Produtos:
+
+Cards com imagem, nome, descrição e botão “Ver Álbum” com link para cada site.
+
+Botão “Comprar Agora”.
+
+Seção de Promoção:
+
+Destaque do combo promocional com design animado.
+
+Seção de Depoimentos:
+
+Três ou quatro depoimentos de clientes fictícios.
+
+Seção de Contato:
+
+Botão de WhatsApp grande e visível.
+
+Mensagem de incentivo: “Pronto para ter seu próprio álbum digital?”.
+
+Rodapé:
+
+Direitos autorais, link do WhatsApp e redes sociais.
+
+Estilo:
+
+Paleta de cores moderna com tons dourado, rosa e branco, transmitindo luxo e emoção.
+
+Tipografia elegante e legível.
+
+Layout limpo e com scroll animado.
+
+Extras:
+
+Use AOS (Animate on Scroll) ou animações CSS customizadas.
+
+Adicione meta tags de SEO com palavras-chave como: “álbum digital personalizado”, “álbum de casal”, “álbum pet digital”.
+
+Adicione favicon e título da aba: “Gohan Digital – Álbuns personalizados”.
+
+WhatsApp:
+
+O botão de contato deve abrir o link:
+
+https://wa.me/5511943652488?text=Olá!%20Gostaria%20de%20comprar%20meu%20álbum%20digital!
+
+
+Entrega esperada:
+
+Código completo em HTML, CSS e JS (sem frameworks pesados).
+
+Design profissional, moderno e animado.
+
+Responsivo, leve e otimizado.
