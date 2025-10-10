@@ -1,54 +1,16 @@
-import { useState } from "react";
-import { X } from "lucide-react";
 import { SiWhatsapp } from "react-icons/si";
-import { Button } from "@/components/ui/button";
 
 export default function FloatingWhatsApp() {
-  const [isExpanded, setIsExpanded] = useState(false);
   const whatsappUrl = "https://wa.me/5511943652488?text=Olá!%20Quero%20comprar%20um%20álbum%20digital.";
 
   return (
-    <div className="fixed bottom-6 right-6 z-50">
-      <div className="relative">
-        {isExpanded && (
-          <div 
-            className="absolute bottom-20 right-0 bg-card border border-border rounded-2xl p-4 shadow-xl w-64 animate-in slide-in-from-bottom-4"
-            data-aos="fade-up"
-          >
-            <button
-              onClick={() => setIsExpanded(false)}
-              className="absolute -top-2 -right-2 w-6 h-6 bg-destructive text-destructive-foreground rounded-full flex items-center justify-center hover-elevate"
-            >
-              <X className="w-4 h-4" />
-            </button>
-            <p className="font-semibold mb-2">Olá! 👋</p>
-            <p className="text-sm text-muted-foreground mb-4">
-              Precisa de ajuda? Faça uma cotação agora mesmo!
-            </p>
-            <Button
-              className="w-full bg-[#25D366] hover:bg-[#20BA5A] text-white"
-              onClick={() => window.open(whatsappUrl, '_blank')}
-              data-testid="button-whatsapp-expandido"
-            >
-              Iniciar Conversa
-            </Button>
-          </div>
-        )}
-
-        <button
-          onClick={() => setIsExpanded(!isExpanded)}
-          className="w-16 h-16 bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110 animate-pulse"
-          data-testid="button-floating-whatsapp"
-        >
-          <SiWhatsapp className="w-8 h-8" />
-        </button>
-
-        <div className="absolute -bottom-1 -right-1 w-20 text-center">
-          <span className="text-xs font-semibold bg-primary text-primary-foreground px-2 py-1 rounded-full whitespace-nowrap">
-            Faça uma Cotação
-          </span>
-        </div>
-      </div>
-    </div>
+    <button
+      onClick={() => window.open(whatsappUrl, '_blank')}
+      className="fixed bottom-6 right-6 z-50 w-16 h-16 bg-gradient-to-br from-[#25D366] to-[#128C7E] hover:from-[#20BA5A] hover:to-[#0F7A6E] text-white rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 hover:scale-110 hover:shadow-[0_0_30px_rgba(37,211,102,0.5)] group"
+      data-testid="button-floating-whatsapp"
+    >
+      <SiWhatsapp className="w-8 h-8 group-hover:scale-110 transition-transform duration-300" />
+      <span className="absolute -top-1 -right-1 w-4 h-4 bg-primary rounded-full border-2 border-white"></span>
+    </button>
   );
 }

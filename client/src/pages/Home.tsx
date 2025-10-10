@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Hero from "@/components/Hero";
 import ProductCard from "@/components/ProductCard";
 import Promotion from "@/components/Promotion";
+import QRCodeSection from "@/components/QRCodeSection";
 import CustomAlbums from "@/components/CustomAlbums";
 import HowItWorks from "@/components/HowItWorks";
 import Testimonials from "@/components/Testimonials";
@@ -69,6 +70,7 @@ export default function Home() {
       </section>
 
       <Promotion />
+      <QRCodeSection />
       <CustomAlbums />
       <HowItWorks />
       <Testimonials />
