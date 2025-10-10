@@ -26,7 +26,7 @@ export default function CustomAlbums() {
   return (
     <section className="py-20 bg-muted/30">
       <div className="max-w-6xl mx-auto px-4">
-        <div className="text-center mb-16" data-aos="fade-up">
+        <div className="text-center mb-16" data-aos="fade-up" data-aos-duration="600">
           <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6">
             Crie seu Álbum <span className="text-primary">Personalizado</span>
           </h2>
@@ -39,23 +39,24 @@ export default function CustomAlbums() {
           {customOptions.map((option, index) => (
             <Card 
               key={index}
-              className="p-8 text-center hover-elevate transition-all duration-300"
+              className="p-8 text-center hover-elevate transition-all duration-500 group hover:shadow-2xl"
               data-aos="fade-up"
               data-aos-delay={index * 100}
+              data-aos-duration="600"
             >
-              <div className="w-16 h-16 mx-auto mb-6 bg-primary/10 rounded-2xl flex items-center justify-center">
-                <option.icon className="w-8 h-8 text-primary" />
+              <div className="w-16 h-16 mx-auto mb-6 bg-primary/10 rounded-2xl flex items-center justify-center transition-all duration-300 group-hover:bg-primary/20 group-hover:scale-110 group-hover:rotate-6">
+                <option.icon className="w-8 h-8 text-primary transition-transform duration-300 group-hover:scale-110" />
               </div>
-              <h3 className="font-semibold text-xl mb-3">{option.title}</h3>
+              <h3 className="font-semibold text-xl mb-3 transition-colors duration-300 group-hover:text-primary">{option.title}</h3>
               <p className="text-muted-foreground">{option.description}</p>
             </Card>
           ))}
         </div>
 
-        <div className="text-center" data-aos="fade-up">
+        <div className="text-center" data-aos="fade-up" data-aos-delay="300" data-aos-duration="600">
           <Button
             size="lg"
-            className="text-lg px-12"
+            className="text-lg px-12 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-primary/50"
             onClick={() => window.open(whatsappUrl, '_blank')}
             data-testid="button-solicitar-personalizacao"
           >

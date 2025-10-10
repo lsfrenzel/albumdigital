@@ -7,6 +7,7 @@ import CustomAlbums from "@/components/CustomAlbums";
 import HowItWorks from "@/components/HowItWorks";
 import Testimonials from "@/components/Testimonials";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
+import ScrollToPromotion from "@/components/ScrollToPromotion";
 import Footer from "@/components/Footer";
 import petImage from "@assets/stock_images/cute_golden_retrieve_da1040a6.jpg";
 import coupleImage from "@assets/stock_images/romantic_couple_hold_ffaf3a67.jpg";
@@ -15,12 +16,15 @@ export default function Home() {
   useEffect(() => {
     const initAOS = () => {
       if (typeof window !== 'undefined' && (window as any).AOS) {
+        const isMobile = window.innerWidth < 768;
         (window as any).AOS.init({
-          duration: 800,
-          easing: 'ease-in-out',
+          duration: isMobile ? 600 : 800,
+          easing: 'ease-out-cubic',
           once: true,
-          offset: 100,
-          disable: false
+          offset: isMobile ? 50 : 100,
+          disable: false,
+          delay: 0,
+          anchorPlacement: 'top-bottom'
         });
       }
     };
@@ -75,6 +79,7 @@ export default function Home() {
       <HowItWorks />
       <Testimonials />
       <FloatingWhatsApp />
+      <ScrollToPromotion />
       <Footer />
     </div>
   );

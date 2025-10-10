@@ -46,17 +46,17 @@ export default function HowItWorks() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {steps.map((step, index) => (
-              <div key={index} className="relative" data-aos="fade-up" data-aos-delay={index * 100}>
-                <Card className="p-6 text-center hover-elevate transition-all duration-300 h-full">
-                  <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center relative z-10">
-                    <step.icon className="w-8 h-8 text-white" />
+              <div key={index} className="relative group" data-aos="fade-up" data-aos-delay={index * 100} data-aos-duration="600">
+                <Card className="p-6 text-center hover-elevate transition-all duration-300 h-full hover:shadow-2xl">
+                  <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center relative z-10 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6">
+                    <step.icon className="w-8 h-8 text-white transition-transform duration-300 group-hover:scale-110" />
                   </div>
                   
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold z-20">
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold z-20 transition-transform duration-300 group-hover:scale-125">
                     {step.number}
                   </div>
 
-                  <h3 className="font-semibold text-lg mb-3">{step.title}</h3>
+                  <h3 className="font-semibold text-lg mb-3 transition-colors duration-300 group-hover:text-primary">{step.title}</h3>
                   <p className="text-sm text-muted-foreground">{step.description}</p>
                 </Card>
               </div>
