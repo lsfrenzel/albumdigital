@@ -12,7 +12,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <img src={logoGohan} alt="Gohan Digital Logo" className="w-12 h-12 rounded-full" />
-              <h3 className="font-serif text-2xl font-bold text-primary">
+              <h3 className="text-2xl font-bold text-primary" style={{ fontFamily: 'Cinzel, serif' }}>
                 Gohan Digital
               </h3>
             </div>
