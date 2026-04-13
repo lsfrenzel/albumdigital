@@ -11,6 +11,8 @@ import ScrollToPromotion from "@/components/ScrollToPromotion";
 import Footer from "@/components/Footer";
 import petImage from "@assets/stock_images/cute_golden_retrieve_da1040a6.jpg";
 import coupleImage from "@assets/stock_images/romantic_couple_hold_ffaf3a67.jpg";
+import maesImage from "@assets/stock_images/professional_happy_w_3fac3fd0.jpg";
+import paisImage from "@assets/stock_images/professional_happy_w_cf90c801.jpg";
 
 export default function Home() {
   useEffect(() => {
@@ -68,6 +70,25 @@ export default function Home() {
               siteUrl="https://lsfrenzel.github.io/gohan/"
               image={coupleImage}
               isReversed
+            />
+
+            <ProductCard
+              title="Dia das Mães"
+              description="Surpreenda a mamãe com um álbum digital emocionante, cheio de carinho, gratidão e memórias inesquecíveis."
+              price="R$ 150,00"
+              siteUrl=""
+              image={maesImage}
+              hideExampleButton
+            />
+
+            <ProductCard
+              title="Dia dos Pais"
+              description="Homenageie o pai com um álbum digital especial, repleto de momentos marcantes e mensagens do coração."
+              price="R$ 150,00"
+              siteUrl=""
+              image={paisImage}
+              isReversed
+              hideExampleButton
             />
           </div>
         </div>

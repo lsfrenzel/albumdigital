@@ -9,6 +9,7 @@ interface ProductCardProps {
   siteUrl: string;
   image: string;
   isReversed?: boolean;
+  hideExampleButton?: boolean;
 }
 
 export default function ProductCard({ 
@@ -17,7 +18,8 @@ export default function ProductCard({
   price, 
   siteUrl, 
   image,
-  isReversed = false 
+  isReversed = false,
+  hideExampleButton = false
 }: ProductCardProps) {
   const whatsappUrl = "https://wa.me/5511943652488?text=Olá!%20Gostaria%20de%20comprar%20o%20álbum%20" + encodeURIComponent(title);
 
@@ -51,14 +53,16 @@ export default function ProductCard({
         </div>
 
         <div className="flex flex-col sm:flex-row gap-3">
-          <Button
-            variant="outline"
-            className="gap-2 hover:scale-105 transition-all duration-300"
-            onClick={() => window.open(siteUrl, '_blank')}
-            data-testid={`button-ver-album-${title.toLowerCase().replace(/\s+/g, '-')}`}
-          >
-            Veja Exemplo <ExternalLink className="w-4 h-4" />
-          </Button>
+          {!hideExampleButton && (
+            <Button
+              variant="outline"
+              className="gap-2 hover:scale-105 transition-all duration-300"
+              onClick={() => window.open(siteUrl, '_blank')}
+              data-testid={`button-ver-album-${title.toLowerCase().replace(/\s+/g, '-')}`}
+            >
+              Veja Exemplo <ExternalLink className="w-4 h-4" />
+            </Button>
+          )}
           <Button
             onClick={() => window.open(whatsappUrl, '_blank')}
             data-testid={`button-comprar-${title.toLowerCase().replace(/\s+/g, '-')}`}
