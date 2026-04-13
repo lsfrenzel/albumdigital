@@ -11,8 +11,8 @@ import ScrollToPromotion from "@/components/ScrollToPromotion";
 import Footer from "@/components/Footer";
 import petImage from "@assets/stock_images/cute_golden_retrieve_da1040a6.jpg";
 import coupleImage from "@assets/stock_images/romantic_couple_hold_ffaf3a67.jpg";
-import maesImage from "@assets/stock_images/professional_happy_w_3fac3fd0.jpg";
-import paisImage from "@assets/stock_images/professional_happy_w_cf90c801.jpg";
+import maesImage from "@assets/image_1776115451737.png";
+import paisImage from "@assets/image_1776115533816.png";
 
 export default function Home() {
   useEffect(() => {
